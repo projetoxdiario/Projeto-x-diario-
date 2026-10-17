@@ -23,7 +23,7 @@ function message(text, bad=false) {
   authMessage.style.color = bad ? '#ffb3a7' : '#aab8af';
 }
 function setMode(mode) {
-  document.getElementById('loginFields').hidden = mode !== 'login';
+  
   document.getElementById('signupFields').hidden = mode !== 'signup';
   document.getElementById('authTitle').textContent = mode === 'login' ? 'Entrar no Projeto X' : 'Criar minha conta';
   document.getElementById('authSubmit').textContent = mode === 'login' ? 'Entrar' : 'Criar conta';
